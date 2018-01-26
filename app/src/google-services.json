@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "907057951449",
+    "project_id": "firebase-teach-for-india"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907057951449:android:44ff76a4b2291c15",
+        "android_client_info": {
+          "package_name": "com.example.mastercheif.hello"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907057951449-4lfd7gh3tv54iscehu0i63i48uetd5s1.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "907057951449-7vmp943mprkhfec7mveavo6vfnb2vj9n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mastercheif.hello",
+            "certificate_hash": "4764533fd0214dc4ecca049b0035a980d00cf748"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7yKPTMo-9issXeF69NkQGAASNLvqNK5g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

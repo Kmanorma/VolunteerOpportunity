@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_weight="0.05"
+        android:clickable="false"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/Email"
+        android:layout_weight="0.05"
+        android:layout_height="25dp"
+        android:layout_marginBottom="20dp">
+        <requestFocus></requestFocus>
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/opportunity_title"
+        android:layout_weight="0.03"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/Opportunity_title"
+        android:layout_weight="0.05"
+        android:layout_height="25dp"
+        android:layout_marginBottom="20dp">
+        <requestFocus></requestFocus>
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/opportunity_des"
+        android:layout_weight="0.03"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/Opportunity_des"
+        android:layout_weight="0.05"
+        android:layout_height="25dp"
+        android:layout_marginBottom="20dp">
+        <requestFocus></requestFocus>
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Address"
+        android:layout_weight="0.03"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/School"
+        android:layout_weight="0.03"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/School"
+        android:layout_weight="0.05"
+        android:layout_height="25dp"
+        android:layout_marginBottom="20dp">
+        <requestFocus></requestFocus>
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Street"
+        android:layout_weight="0.03"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/Street"
+        android:layout_height="25dp"
+        android:layout_marginBottom="20dp">
+        <requestFocus></requestFocus>
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/City"
+        android:layout_weight="0.03"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/City"
+        android:layout_weight="0.05"
+        android:layout_height="25dp"
+        android:layout_marginBottom="20dp">
+        <requestFocus></requestFocus>
+    </EditText>
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit" />
+
+
+</LinearLayout>
