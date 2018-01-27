@@ -53,7 +53,7 @@ public class VolunteerOpportunity extends Activity {
 
                         List<Tuple> listOfValues = Arrays.asList(arrayValues);
 
-                String url = "http:192.18.0.6:3000/opportunities";
+                String url = "http://192.168.0.5:3000/volunteers";
                ServiceHandler serviceHandler = new ServiceHandler();
                serviceHandler.makePostCall(url, listOfValues);
             }

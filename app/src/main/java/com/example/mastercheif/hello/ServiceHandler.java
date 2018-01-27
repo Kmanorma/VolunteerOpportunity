@@ -16,6 +16,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.impl.client.DefaultHttpClient;
 
+import android.os.StrictMode;
 import android.util.Log;
 
 public class ServiceHandler {
@@ -28,6 +29,14 @@ public class ServiceHandler {
     public ServiceHandler() {
     }
 
+    public void enableStrictMode()
+    {
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+
+        StrictMode.setThreadPolicy(policy);
+    }
+
+
 
     public String makeGetCall(String url) {
         try {
@@ -35,7 +44,7 @@ public class ServiceHandler {
             DefaultHttpClient httpClient = new DefaultHttpClient();
             HttpEntity httpEntity = null;
             HttpResponse httpResponse = null;
-
+           enableStrictMode();
             HttpGet httpGet = new HttpGet(url);
 
             httpResponse = httpClient.execute(httpGet);
@@ -81,9 +90,10 @@ public class ServiceHandler {
 
 
                 HttpPost httpPost = new HttpPost(url);
+            enableStrictMode();
 
 
-                    httpPost.setEntity(new UrlEncodedFormEntity(params));
+            httpPost.setEntity(new UrlEncodedFormEntity(params));
 
 
                 httpResponse = httpClient.execute(httpPost);

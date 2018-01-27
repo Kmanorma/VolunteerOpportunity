@@ -5,6 +5,17 @@ apply plugin: 'com.google.gms.google-services'
 
 
 android {
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        useLibrary 'org.apache.http.legacy'
+    }
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.example.mastercheif.hello"
