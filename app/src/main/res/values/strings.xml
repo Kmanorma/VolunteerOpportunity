@@ -2,6 +2,8 @@
     <string name="tfi">One day all children will attain excellent education!</string>
     <string name="movement">JOIN THE MOVEMENT</string>
     <string name="app_name">TEACH FOR INDIA</string>
+    <string name="volun">VOLUNTEER OPPORTUNITY</string>
+
     <string name="vo">CHECK VOLUNTEER OPPORTUNITY</string>
     <string name="ng">new_game</string>
     <string name="h">Help</string>
@@ -62,9 +64,18 @@
     <string name="School">School</string>
     <string name="Street">Street</string>
     <string name="City">City</string>
-    <string name="Location">Location</string>
+    <string name="Datet">Date/Time</string>
+    <string name="Time">Time</string>
     <string name="submit">Submit</string>
     <string name="title_activity_opportunity">Opportunity</string>
+    <string name="email_out">Email</string>
+    <string name="opportunity_titleout">Opportunity Title</string>
+    <string name="opportunity_des1_out">Opportunity Description</string>
+    <string name="Address_out">Address</string>
+    <string name="School_out">School</string>
+    <string name="Street_out">Street</string>
+    <string name="City_out">City</string>
+    <string name="Location_out">Location</string>
 
 
 </resources>

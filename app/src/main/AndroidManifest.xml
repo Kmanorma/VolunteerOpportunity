@@ -20,11 +20,13 @@
         <activity
             android:name=".VolunteerOpportunity"
             android:label="@string/title_activity_volunteer_opportunity"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".Opportunity"
             android:label="@string/title_activity_opportunity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

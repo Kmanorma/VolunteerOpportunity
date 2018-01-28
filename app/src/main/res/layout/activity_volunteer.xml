@@ -1,110 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/email"
-        android:layout_weight="0.05"
-        android:clickable="false"
-        />
-
-    <EditText
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:id="@+id/Email"
-        android:layout_weight="0.05"
-        android:layout_height="25dp"
-        android:layout_marginBottom="20dp">
-        <requestFocus></requestFocus>
-    </EditText>
+        android:background="#8fb4ef"
+        android:layout_height="match_parent"
+        tools:context="com.example.mastercheif.hello.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/opportunity_title"
-        android:layout_weight="0.03"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:id="@+id/Opportunity_title"
-        android:layout_weight="0.05"
-        android:layout_height="25dp"
-        android:layout_marginBottom="20dp">
-        <requestFocus></requestFocus>
-    </EditText>
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="14dp"
+            android:layout_weight="0.03"
+            android:text="@string/email"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.008" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/opportunity_des"
-        android:layout_weight="0.03"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:id="@+id/Opportunity_des"
-        android:layout_weight="0.05"
-        android:layout_height="25dp"
-        android:layout_marginBottom="20dp">
-        <requestFocus></requestFocus>
-    </EditText>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Address"
-        android:layout_weight="0.03"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/School"
-        android:layout_weight="0.03"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:id="@+id/School"
-        android:layout_weight="0.05"
-        android:layout_height="25dp"
-        android:layout_marginBottom="20dp">
-        <requestFocus></requestFocus>
-    </EditText>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Street"
-        android:layout_weight="0.03"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:id="@+id/Street"
-        android:layout_height="25dp"
-        android:layout_marginBottom="20dp">
-        <requestFocus></requestFocus>
-    </EditText>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/City"
-        android:layout_weight="0.03"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:id="@+id/City"
-        android:layout_weight="0.05"
-        android:layout_height="25dp"
-        android:layout_marginBottom="20dp">
-        <requestFocus></requestFocus>
-    </EditText>
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="409dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="512dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
 
-    <Button
-        android:id="@+id/btnsubmit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/submit" />
+            <requestFocus></requestFocus>
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:text="@string/opportunity_title"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.154" />
+
+        <EditText
+            android:id="@+id/Opportunity_title"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_weight="0.05"
+            android:padding="10dp"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.221">
+
+            <requestFocus></requestFocus>
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:text="@string/opportunity_des"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.289" />
+
+        <EditText
+            android:id="@+id/Opportunity_des"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_weight="0.05"
+            android:padding="10dp"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.34">
+
+            <requestFocus></requestFocus>
+        </EditText>
+
+        <TextView
+            android:layout_width="68dp"
+            android:layout_height="15dp"
+            android:layout_weight="0.03"
+            android:text="@string/Address"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.412" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="320dp"
+            android:layout_weight="0.03"
+            android:text="@string/School"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:id="@+id/School"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0.05"
+            android:padding="10dp"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499">
+
+            <requestFocus></requestFocus>
+        </EditText>
+
+        <TextView
+            android:layout_width="56dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="208dp"
+            android:layout_weight="0.03"
+            android:text="@string/Street"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.325" />
+
+        <EditText
+            android:id="@+id/Street"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:padding="10dp"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.621">
+
+            <requestFocus></requestFocus>
+        </EditText>
+
+        <TextView
+            android:layout_width="47dp"
+            android:layout_height="26dp"
+            android:layout_weight="0.03"
+            android:text="@string/City"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.696" />
+
+        <EditText
+            android:id="@+id/City"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_weight="0.05"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.763">
+
+            <requestFocus></requestFocus>
+        </EditText>
 
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="148dp"
+            android:text="@string/submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:layout_width="53dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="0.03"
+            android:text="@string/Datet"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.807" />
+
+        <EditText
+            android:id="@+id/Datet"
+            android:layout_width="407dp"
+            android:layout_height="53dp"
+            android:layout_weight="0.05"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.894">
+
+            <requestFocus></requestFocus>
+        </EditText>
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
